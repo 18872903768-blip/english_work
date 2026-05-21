@@ -1,0 +1,102 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.paper {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 15mm 12mm 12mm;
+  background: #ffffff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  font-family: 'Times New Roman', Georgia, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 8mm;
+}
+
+.title {
+  font-size: 16pt;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+  margin: 0 0 4mm;
+  letter-spacing: 0.5mm;
+}
+
+.line {
+  height: 2px;
+  background: #333;
+  width: 100%;
+}
+
+.mainArea {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  min-height: 200mm;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+  padding-right: 3mm;
+}
+
+/* Draggable divider */
+.divider {
+  width: 6px;
+  flex-shrink: 0;
+  cursor: col-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition: background 0.15s;
+  border-radius: 3px;
+  margin: 0 1px;
+}
+
+.divider:hover {
+  background: #e6f0ff;
+}
+
+.dividerActive {
+  background: #b3d4ff !important;
+}
+
+.dividerHandle {
+  width: 2px;
+  height: 40px;
+  background: #c0c0c0;
+  border-radius: 1px;
+  transition: background 0.15s, height 0.15s;
+}
+
+.divider:hover .dividerHandle {
+  background: #8c8c8c;
+  height: 60px;
+}
+
+.dividerActive .dividerHandle {
+  background: #1890ff;
+  height: 80px;
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10pt;
+  color: #888;
+  border-top: 1px solid #eee;
+  padding-top: 3mm;
+}

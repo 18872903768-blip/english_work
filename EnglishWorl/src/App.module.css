@@ -1,0 +1,30 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+  background: #e8e8e8;
+}
+
+.leftPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  overflow-y: auto;
+  min-width: 0;
+}
+
+@media print {
+  .app {
+    background: #fff;
+  }
+}
+
+@media (max-width: 1200px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .leftPanel {
+    order: 1;
+  }
+}

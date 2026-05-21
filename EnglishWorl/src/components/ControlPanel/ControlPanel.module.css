@@ -1,0 +1,78 @@
+.panel {
+  width: 380px;
+  background: #fafafa;
+  border-left: 1px solid #e8e8e8;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: auto;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.panelTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #1890ff;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.textArea {
+  font-family: 'Times New Roman', Georgia, serif;
+  font-size: 13px;
+}
+
+.error {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-top: 6px;
+  padding: 6px 10px;
+  background: #fff2f0;
+  border: 1px solid #ffccc7;
+  border-radius: 4px;
+}
+
+.aiConfig {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.configTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.configRow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.configLabel {
+  font-size: 11px;
+  color: #888;
+}
+
+.resetBtn {
+  margin-top: 16px;
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+.qrCorner {
+  position: absolute;
+  top: 10mm;
+  right: 10mm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.qrLabel {
+  font-size: 7pt;
+  color: #999;
+  margin-top: 1px;
+}

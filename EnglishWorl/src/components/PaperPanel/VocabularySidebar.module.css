@@ -1,0 +1,60 @@
+.sidebar {
+  width: 100%;
+  border-left: 1px dashed #d0d0d0;
+  padding-left: 3mm;
+  font-size: 11pt;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 12pt;
+  color: #333;
+  margin-bottom: 3mm;
+  padding-bottom: 2mm;
+  border-bottom: 2px solid #1890ff;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5mm;
+}
+
+.item {
+  cursor: pointer;
+  padding: 1.5mm 1mm;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+  border-bottom: 1px dotted #eee;
+}
+
+.item:hover {
+  background-color: #e6f7ff;
+}
+
+.wordRow {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5mm;
+}
+
+.word {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  color: #1890ff;
+  font-size: 12pt;
+}
+
+.pos {
+  font-size: 9pt;
+  color: #888;
+  font-style: italic;
+}
+
+.meaning {
+  font-size: 10pt;
+  color: #555;
+  display: block;
+  margin-top: 1mm;
+}
